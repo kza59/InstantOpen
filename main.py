@@ -30,7 +30,9 @@ def openThing(filePath):
             chromePath = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
             if os.path.exists(chromePath):
                 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chromePath))
-                webbrowser.get('chrome').open(f'file://{os.path.abspath(win_file_path).replace("\\", "/")}')
+                
+                webbrowser.get('chrome').open(f'file://{os.path.abspath(win_file_path).replace("/", "/")}')
+
                 print(f"Opened {win_file_path} in Chrome")
             else:
                 print("Chrome is not installed in the default path.")
