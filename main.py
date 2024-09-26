@@ -91,7 +91,7 @@ def readConfig(file_name):
 
 #main function
 if __name__ == "__main__":
-    configFile = "configs\\config5.txt"
+    configFile = "configs\\exampleConfig.txt"
     EXECUTABLES = readConfig(configFile)
     for EXE in EXECUTABLES:
         openThing(EXE)
